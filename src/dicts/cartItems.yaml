@@ -1,0 +1,19 @@
+Elephant:
+    card_info:
+        # идентификатор товарной позиции
+        position_id: 1
+        name: Большой индийский слон
+        # в примере для тестовых целей сумма платежа = 1 рубль
+        item_price: 100
+        item_amount: 100
+        # обязательное поле валюты
+        currency: RUB
+        item_code: "ru.sberdevices.elephant"
+        quantity:
+          value: 1
+          measure: "штука"
+        discount_type: percent
+        #по скидке
+        discount_value: 0
+        #система налогообложения
+        tax_type: 6

@@ -1,0 +1,109 @@
+{
+  "project" : {
+    "id" : "oden_androida-2256-oMh",
+    "name" : "oden_androida-2256-oMh",
+    "folder" : "/jaicp"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "Europe/Moscow",
+    "extendedSettings" : {
+      "tokenizerEngine" : "mystem"
+    },
+    "shared" : false
+  },
+  "intents" : [ {
+    "id" : 156236,
+    "path" : "/dressUp",
+    "answer" : "",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ ],
+    "patterns" : [ "Надень @одежда", "одень @одежда", "одеть @одежда", "надеть @одежда", "на день @одежда", "найди @одежда" ],
+    "slots" : [ ]
+  }, {
+    "id" : 156237,
+    "path" : "/checkStatus",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "статус платежа"
+    }, {
+      "text" : "проверь статус"
+    }, {
+      "text" : "проверь платеж"
+    } ],
+    "patterns" : [ ]
+  }, {
+    "id" : 156238,
+    "path" : "/hasElephant",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "есть ли слон"
+    }, {
+      "text" : "имеется ли слон"
+    }, {
+      "text" : "есть слон"
+    } ],
+    "patterns" : [ ]
+  }, {
+    "id" : 156239,
+    "path" : "/buySomething",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "купи слона"
+    }, {
+      "text" : "купить слона"
+    }, {
+      "text" : "купи слон"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ ]
+  }, {
+    "id" : 162854,
+    "path" : "/removeClothes",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "снять вещи"
+    }, {
+      "text" : "очистить вещи"
+    }, {
+      "text" : "сними вещи"
+    }, {
+      "text" : "сними все"
+    }, {
+      "text" : "снять все"
+    }, {
+      "text" : "разденься"
+    }, {
+      "text" : "раздется"
+    }, {
+      "text" : "очистить"
+    } ],
+    "patterns" : [ ]
+  } ],
+  "entities" : [ {
+    "entity" : {
+      "id" : 90671,
+      "name" : "одежда",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false
+    },
+    "records" : [ {
+      "id" : 8404610,
+      "type" : "synonyms",
+      "rule" : [ "Шапка", "Куртка", "Перчатки", "Ботинки", "Варежки" ],
+      "value" : ""
+    } ]
+  } ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ]
+}

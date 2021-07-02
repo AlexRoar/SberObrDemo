@@ -1,0 +1,32 @@
+name: echo-template
+
+entryPoint:
+  - main.sc
+
+botEngine: v2
+language: ru
+sts:
+  noMatchThreshold: 0.2
+caila:
+  noMatchThreshold: 0.2
+
+scriptsPreLoad:
+  global:
+    - /jslib/moment.min.js
+    - /jslib/underscore.js
+    - /jsapi/common.js
+    - /jsapi/http.js
+  local:
+    - /jsapi/mail.js
+    - /jsapi/reactions.js
+    - /jsapi/payment.js
+
+tests:
+  include:
+    - test.xml
+
+injector:
+# Вставьте сюда serviceId и API Key, полученный Вами при подключении монетизации согласно этому руководству: 
+# https://developer.sberdevices.ru/docs/ru/payment_tools/getting_production_api_key
+    service_id: ''
+    pay_api_key: ''
